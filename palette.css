@@ -1,0 +1,58 @@
+/* my color palette */
+
+:root {
+    color-scheme: light;
+
+    --page-bg: #ffffff;
+    --text-color: #20252b;
+    --link-color: #008dcc;
+    --link-hover: #006b9b;
+    --button-bg: #00aff0;
+    --button-hover: #008cc3;
+    --button-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --page-bg: #101419;
+        --text-color: #e6e8eb;
+        --link-color: #36c5ff;
+        --link-hover: #8bdcff;
+        --button-bg: #00aff0;
+        --button-hover: #008cc3;
+        --button-text: #ffffff;
+    }
+}
+
+/* Page */
+
+body {
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+/* links */
+
+a {
+    color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+    color: var(--link-hover);
+}
+
+/* horizontal rules */
+
+hr {
+    border: 0;
+    border-top: 0.1rem solid #d1d1d1;
+}
+
+@media (prefers-color-scheme: dark) {
+    hr {
+        border-top-color: #3a424b;
+    }
+}
